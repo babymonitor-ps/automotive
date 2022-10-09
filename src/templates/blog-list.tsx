@@ -70,6 +70,7 @@ export const pageQuery = graphql`
 		allMarkdownRemark(
 			sort: { fields: [frontmatter___date], order: DESC }
 			limit: $limit
+			filter: {frontmatter: {draft: {ne: true}}}
 			skip: $skip
 		) {
 			edges {

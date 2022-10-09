@@ -28,7 +28,7 @@ const Posts: React.FunctionComponent<PostsProps> = () => {
 			allMarkdownRemark(
 				sort: { fields: [frontmatter___date], order: DESC }
 				skip: 1
-				filter: { frontmatter: { tags: { ne: "featured" } } }
+				filter: {frontmatter: {draft: {ne: true}, tags: {ne: "featured"}}}
 			) {
 				totalCount
 				edges {

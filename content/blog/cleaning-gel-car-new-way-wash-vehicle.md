@@ -1,6 +1,7 @@
 ---
 title: Cleaning Gel for Car is the New Way to Wash Your Vehicle
 date: '2022-07-29'
+draft: false
 tags: ['Cars', 'Cleaning Gel', 'Wash Vehicle']
 categories: ['Cleaning', 'featured', 'trending']
 cover: ../images/cleaning-gel-car-new-way-wash-vehicle.jpg

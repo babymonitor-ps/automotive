@@ -1,6 +1,7 @@
 ---
 title: Car Vacuum Cleaner Small Auto Accessories Kit The Best Way to Keep Your Car Clean
 date: '2022-07-30'
+draft: false
 tags: ['Cars', 'Car Vacuum Cleaner']
 categories: ['Cleaning', 'featured', 'trending']
 cover: ../images/car-vacuum-cleaner-small-auto-accessories-kit-best-way-keep-car-clean.jpg
