@@ -4,22 +4,25 @@ hide_body: false
 fields:
 - type: text
   name: title
-  label: title
+  label: Title
 - type: boolean
   name: draft
-  label: draft
+  label: Draft
 - type: datetime
   name: date
-  label: date
+  label: Date
 - type: file
   name: cover
-  label: cover
+  label: Cover
 - type: textarea
   name: description
-  label: description
+  label: Description
+  config:
+    min: 48
+    max: 160
 - type: list
   name: tags
-  label: tags
+  label: Tags
 - type: list
   name: categories
-  label: categories
+  label: Categories
