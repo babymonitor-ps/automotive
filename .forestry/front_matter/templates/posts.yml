@@ -26,3 +26,5 @@ fields:
 - type: list
   name: categories
   label: Categories
+pages:
+- content/blog/best-car-phone-mounts-for-iphone-android-and-other-smartphone.md
