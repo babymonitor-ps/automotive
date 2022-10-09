@@ -1,0 +1,66 @@
+backend:
+  name: gitlab
+  repo: pawneshwergupta/automotive-blog
+  branch: main
+  auth_type: pkce # Required for implicit grant
+  app_id: 3c4a0218735c604cde043929f492a22c0082fe8f23b292ebaa7ad95fb35d703d
+  commit_messages:
+    create: 'Create {{collection}} “{{slug}}”'
+    update: 'Update {{collection}} “{{slug}}”'
+    delete: 'Delete {{collection}} “{{slug}}”'
+    uploadMedia: '[skip ci] Upload “{{path}}”'
+    deleteMedia: '[skip ci] Delete “{{path}}”'
+
+  
+#local_backend: true
+site_url: https://automotive.vehicle24x7.com
+# This line should *not* be indented
+publish_mode: editorial_workflow
+#media_folder: static/img
+media_folder: content/images
+public_folder: ../images
+collections:
+  - name: "posts" # Used in routes, e.g., /admin/collections/blog
+    label: "Posts" # Used in the UI
+    label_singular: 'Post' # Used in the UI, ie: "New Post"
+    folder: "content/blog" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    # slug: "index" # Filename template, e.g., YYYY-MM-DD-title.md
+    # path: '{{title}}/index'
+    editor:
+      preview: true
+    #summary: '{{title}} -- {{year}}/{{month}}/{{day}}'
+
+    view_filters:
+      - label: Posts With Index
+        field: title
+        pattern: 'This is post #'
+      - label: Posts Without Index
+        field: title
+        pattern: front matter post
+      - label: Drafts
+        field: draft
+        pattern: true
+    view_groups:
+      - label: Year
+        field: date
+        pattern: \d{4}
+      - label: Drafts
+        field: draft
+    fields: # The fields for each document, usually in front matter
+      - {label: "Title", name: "title", widget: "string"}
+      - { label: 'Draft', name: 'draft', widget: 'boolean', default: false }
+      - {label: "Publish Date", name: "date", widget: "datetime"}
+      - {label: "Featured Image", name: "cover", widget: "image"}
+      - {label: "Body", name: "body", widget: "markdown"}
+      - {label: "Description", name: "description", widget: "string"}
+      - name: tags
+        label: Tags
+        widget: categories
+        separator: ","
+        required: false
+      - name: categories
+        label: Categories
+        widget: categories
+        required: false
+        separator: ","
