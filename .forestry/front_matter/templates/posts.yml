@@ -1,0 +1,25 @@
+---
+label: posts
+hide_body: false
+fields:
+- type: text
+  name: title
+  label: title
+- type: boolean
+  name: draft
+  label: draft
+- type: datetime
+  name: date
+  label: date
+- type: file
+  name: cover
+  label: cover
+- type: textarea
+  name: description
+  label: description
+- type: list
+  name: tags
+  label: tags
+- type: list
+  name: categories
+  label: categories
