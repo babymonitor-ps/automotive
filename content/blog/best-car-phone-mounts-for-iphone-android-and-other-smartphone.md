@@ -1,7 +1,7 @@
 ---
 title: Best Car Phone Mounts for iPhone, Android, and Other Smartphone
 draft: true
-date: 
+date: 2022-10-10T00:00:00+05:30
 cover: ''
 description: Car phone mounts are a way to keep your iPhone, Android, or other smartphone
   in place while driving. Find the perfect mount for whatever you own.
